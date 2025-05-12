@@ -21,11 +21,11 @@ jobs:
 
     - name: Build Backend Docker Image
       run: |
-        docker build -t abdullah577/mern-backend:latest ./backend
+        docker build -t i222539nuedupk/mern-backend:latest ./backend
 
     - name: Build Frontend Docker Image
       run: |
-        docker build -t abdullah577/mern-frontend:latest ./frontend
+        docker build -t i222539nuedupk/mern-frontend:latest ./frontend
 
     - name: Login to Docker Hub
       shell: cmd
@@ -33,10 +33,10 @@ jobs:
         echo Pakistan@4756 | docker login -u i222539nuedupk --password-stdin
 
     - name: Push Backend Image to Docker Hub
-      run: docker push abdullah577/mern-backend:latest
+      run: docker push i222539nuedupk/mern-backend:latest
 
     - name: Push Frontend Image to Docker Hub
-      run: docker push abdullah577/mern-frontend:latest
+      run: docker push i222539nuedupk/mern-frontend:latest
 
     - name: Deploy to Minikube
       run: |
