@@ -27,7 +27,7 @@ jobs:
         docker build -t i222539nuedupk/mern-frontend:latest ./frontend
 
     - name: Login to Docker Hub
-      run: echo "${{ secrets.DOCKER_PASSWORD }}" | docker login -u "${{ secrets.DOCKER_USERNAME }}" --password-stdin
+      run: echo "Pakistan@4756" | docker login -u "i222539nuedupk" --password-stdin
 
     - name: Push Backend Image to Docker Hub
       run: docker push i222539nuedupk/mern-backend:latest
