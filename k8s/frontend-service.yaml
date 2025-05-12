@@ -9,4 +9,4 @@ spec:
   ports:
     - port: 5173
       targetPort: 5173
-      nodePort: 30002
+      nodePort: 32002
