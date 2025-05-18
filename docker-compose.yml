@@ -1,0 +1,35 @@
+version : "3.8"
+services:
+  frontend:
+    image: i222539nuedupk/mern-frontend
+    ports:
+      - 5173:5173
+    stdin_open: true
+    networks: 
+      - mern-app
+
+  backend:
+    image: i222539nuedupk/mern-backend
+    ports:
+      - 5000:5000
+    networks: 
+      - mern-app
+    depends_on:
+      - mongodb
+
+  mongodb:
+    image: mongo:3.6.19-xenial
+    ports:
+      - 27017:27017
+    networks: 
+      - mern-app
+    volumes:
+      - mongo-data:/data/db
+
+volumes:
+  mongo-data:
+    driver: local
+
+networks:
+  mern-app:
+    driver: bridge

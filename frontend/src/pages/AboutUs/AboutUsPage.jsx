@@ -1,5 +1,5 @@
 import React from "react";
-import briobazaar from "../../assets/briobazaar.jpg";
+import briobazaar from "../../assets/BrioBazaar.jpg";
 //for admin
 const AboutUsPage = () => {
   return (

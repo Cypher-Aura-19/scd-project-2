@@ -17,3 +17,6 @@ spec:
         image: i222539nuedupk/mern-backend:latest
         ports:
         - containerPort: 5000
+        env:
+        - name: MONGO_URI
+          value: "mongodb+srv://talharizwan692:9OB87hubolyB5aWD@cluster0.y1bzi.mongodb.net/lebaba"  
